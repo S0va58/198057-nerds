@@ -1,38 +1,32 @@
-html,body{
+html, body {
     margin: 0;
     padding: 0;
 }
-body{
-    font-size: 16 px;
-    line-height: 22 px;
+
+body {
+    font-size: 16px;
+    line-height: 22px;
     color: #283136;
-    font-family: "Roboto";
-    font-weight: normal;  
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
-	font-size: 40 px;
-    line-height: 1.2 em;
+	font-size: 40px;
+    line-height: 1.2em;
     text-transform: uppercase;
 	color: #000000;
-	font-family: "Roboto";	
-    font-weight: normal;  
 }
 
 h2 {
-	font-size: 18 px;
-    line-height: 30 px;
+	font-size: 18px;
+    line-height: 30px;
     text-transform: uppercase;
 	color: #000000;
-	font-family: "Roboto";
-    font-weight: normal;  
 }
 
-b {
-	font-size: 36 px;
-	line-height: 36 px;
+.slaid-title, .footer-tagline {
+	font-size: 36px;
+	line-height: 36px;
 	color: #000000;
-	font-family: "Roboto";
-    font-weight: normal;  
 }
 
