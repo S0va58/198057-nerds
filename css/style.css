@@ -1,0 +1,38 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16 px;
+    line-height: 22 px;
+    color: #283136;
+    font-family: "Roboto";
+    font-weight: normal;  
+}
+
+h1 {
+	font-size: 40 px;
+    line-height: 1.2 em;
+    text-transform: uppercase;
+	color: #000000;
+	font-family: "Roboto";	
+    font-weight: normal;  
+}
+
+h2 {
+	font-size: 18 px;
+    line-height: 30 px;
+    text-transform: uppercase;
+	color: #000000;
+	font-family: "Roboto";
+    font-weight: normal;  
+}
+
+b {
+	font-size: 36 px;
+	line-height: 36 px;
+	color: #000000;
+	font-family: "Roboto";
+    font-weight: normal;  
+}
+
