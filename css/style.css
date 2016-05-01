@@ -7,7 +7,7 @@ body {
     font-size: 16px;
     line-height: 22px;
     color: #283136;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Medium", sans-serif;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
     line-height: 1.2em;
     text-transform: uppercase;
 	color: #000000;
+    text-align: center;
 }
 
 h2 {
@@ -24,9 +25,232 @@ h2 {
 	color: #000000;
 }
 
+.about-title {
+    text-align: left;
+    font-size: 36px;
+    text-transform: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr {
+    color: #eeeeee;
+    size: 2px;
+}
+
 .slaid-title, .footer-tagline {
 	font-size: 36px;
 	line-height: 36px;
 	color: #000000;
 }
 
+.site-header {   
+    background-color: #eeeeee;
+    margin-bottom: 80px;
+}
+
+.container {
+    width: 880px;
+    padding: 0 10px;    
+    margin: 0 auto;    
+}
+
+.header-logo {
+    width: 139px;
+    height: 56px;
+    float: left;
+}
+
+.main-title {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.main-navigation {
+    width: 400px;
+    float: right;    
+}
+
+.main-navigation ul {
+    padding: 0;
+    margin: 0; 
+}
+
+.main-navigation ul li {
+    display: inline-block;
+}
+
+.cart {
+    width: 100px;
+    float: right;
+}
+
+.slaider {
+    min-height: 353px;
+    padding-top: 53px;  
+}
+
+.slide-content {
+   
+}
+
+.services {
+    margin-bottom: 80px;
+    padding: 0;    
+    font-size: 0;
+}
+
+.service {   
+    display: inline-block; 
+    margin-right: 80px;
+    width: 240px;
+    vertical-align: top;
+    font-size: 15px;
+}
+
+.services li:last-child {
+    margin-right: 0;
+}
+
+.description {
+    float: left;
+    width: 630px;
+}
+
+.features-description {
+    float: right;
+    width: 250;
+}
+
+.about {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.partners {
+    padding: 0;
+    margin-top: 45px; 
+    margin-bottom: 35px;
+    font-size: 0;    
+}
+
+.partners li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 120px;
+    vertical-align: middle;
+}
+
+.partners li:last-child {
+    margin-right: 0;    
+}
+
+.map {
+    margin-top: 85px;
+    margin-bottom: 77px;
+    min-height: 416px;    
+    background: #e9e5dc url("../img/forte.jpg") norepeat 0 0;
+}
+
+.footer {
+    min-height: 139px;
+    margin-top: 77px;
+}
+
+.social {
+    float: left;
+    width: 240px;
+    margin-right: 80px;
+    padding: 0;
+}
+
+.social-list li {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    margin-right: 27px;
+}
+
+.special-action {
+    float: left;
+}
+
+.filter {
+    float: left;
+    width: 240px;
+}
+
+.items-side {
+    float: right;
+    width: 560px;
+}
+
+.main-sorting {
+    float: left;
+}
+
+.main-sorting-list {
+    padding: 0;
+}
+
+.main-sorting-list li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.main-sorting-list li:last-child {
+    margin-right: 0;
+} 
+
+.add-sorting {
+    float: right;
+    padding: 0;
+}
+
+.add-sorting-list li {
+    display: inline-block;
+}
+
+.items {
+    padding: 0;
+    font-size: 0;
+}
+
+.item {    
+    display: inline-block;
+    width: 240px;
+    vertical-align: top;
+    font-size: 14px;
+    margin-right: 80px;
+    margin-bottom: 80px;    
+    outline : 1px solid black;
+}
+
+.item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.page-navigation {
+    font-size: 0;
+}
+
+.page-navigation-list {
+    padding: 0;    
+}
+
+.page-navigation li {
+    width: 38px;
+    height: 38px;
+    background-color: #e9e5dc;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.page-navigation li:last-child {
+     width: 140px;
+}

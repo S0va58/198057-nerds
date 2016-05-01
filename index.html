@@ -3,17 +3,21 @@
 <head>
 	<meta charset="utf-8">
     <title>Нёрдс - дизайн-студия - Краснодар</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
     <header class="site-header">
-    	<div class="container">
-    		<div class="header-logo">
+    	<div class="container clearfix">
+            <div class="header-logo">
         		<a href="index.html">
         			<img src="img/logo.svg" width="139" height="56" alt="Нёрдс, дизайн-студия, Краснодар">	
         		</a>
         	</div>
+            <div class="cart">
+                <a href="#">Корзина</a>
+            </div>
             <nav class="main-navigation">
           		<ul>
           			<li>
@@ -30,40 +34,42 @@
             		</li>
           		</ul>
         	</nav>
-        	<div class="cart">
-        		<a href="#">Корзина</a>
-        	</div>
-        	<div class="slide-content slide1">
-        		<div class="slaid-title">Долго, дорого, скрупулезно.</div>
-        		<div class="slaid-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</div>
-        		<a class="slide-btn-more" href="#">Узнать больше</a>        		 		
-        	</div> 
-        	<div class="slide-content slide2">
-        		<div class="slaid-title">Любите ли вы математику, как любим ее мы?</div>
-        		<div class="slaid-description">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</div>
-        		<a class="slide-btn-more" href="#">Узнать больше</a>         		       		
-        	</div> 
-        	<div class="slide-content slide3">
-        		<div class="slaid-title">Только наркотики, только хардкор!</div>
-        		<div class="slaid-description">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</div>
-        		<a class="slide-btn-more" href="#">Узнать больше</a>           		       		
-        	</div>        	
-          	<ul class="slide-navigation">
-          		<li>
-          			<button type="button" onclick=""></button>              		
-            	</li>
-            	<li>
-              		<button type="button" onclick=""></button>
-            	</li>
-            	<li>
-             		<button type="button" onclick=""></button>
-            	</li>            		
-          	</ul>        	
-      	</div>
-    </header>
+        </div>   
+        <div class="container">
+            <div class="slaider">           
+            <div class="slide-content slide1">
+                <div class="slaid-title">Долго, дорого, скрупулезно.</div>
+                <div class="slaid-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</div>
+                <a class="slide-btn-more" href="#">Узнать больше</a>                        
+            </div> 
+            <div class="slide-content slide2">
+                <div class="slaid-title">Любите ли вы математику, как любим ее мы?</div>
+                <div class="slaid-description">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</div>
+                <a class="slide-btn-more" href="#">Узнать больше</a>                            
+            </div> 
+            <div class="slide-content slide3">
+                <div class="slaid-title">Только наркотики, только хардкор!</div>
+                <div class="slaid-description">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</div>
+                <a class="slide-btn-more" href="#">Узнать больше</a>                            
+            </div>          
+            <ul class="slide-navigation">
+                <li>
+                    <button type="button" onclick=""></button>                      
+                </li>
+                <li>
+                    <button type="button" onclick=""></button>
+                </li>
+                <li>
+                    <button type="button" onclick=""></button>
+                </li>                   
+            </ul>           
+        </div>   
+        </div>       
+    </header>      
 
-    <main class="container">
-    	<ul class="services">
+    <main class="container">    
+    	
+        <ul class="services">
     		<li class="service">
     			<article>
     				<img src="img/websites.jpg" width="240" height="124" alt="Веб-сайты">
@@ -88,9 +94,10 @@
     				<a class="service-btn presentations" href="#">Заказать</a>
     			</article>
     		</li>
-    	</ul>    	
-    	<hr>
-    	<div class="about">
+    	</ul> 
+          	
+    	<hr noshade>        
+    	<div class="about clearfix">
     		<section class="description">
     			<h1 class="about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
     			<div class="about-tagline">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</div>
@@ -101,7 +108,7 @@
           			<li>Слайдшоу и видео для корпоративных презентаций</li>
     			</ul>
     		</section>
-    		<aside>
+    		<aside class="features-description">
     			<div class="main-logo">
         			<a href="index.html"><img src="img/logo.svg" width="187" height="75" alt="Нёрдс, дизайн-студия, Краснодар"></a>
         			<div class="experience">Since 2004</div>
@@ -115,9 +122,9 @@
     				</ul>	
         		</section>
     		</aside>    	
-    	</div>
-        <hr>
-        <ul class="partners">
+    	</div>        
+        <hr noshade>
+        <ul class="partners">            
         	<li>
         		<a href="#">
         			<img src="img/gluhanko.svg" width="198" height="37" alt="Glukhanko">	
@@ -134,7 +141,7 @@
         		</a>
         	</li>
         </ul>       
-        <hr>        
+        <hr noshade>  
     </main>      
     <div class="map">        
         <div class="contacts">
@@ -145,9 +152,9 @@
         </div>
     </div>  
 
-    <footer class="container">
+    <footer class="container clearfix">
     	<div class="social">               
-            <ul>
+            <ul class="social-list">
                 <li>
                     <a class="social-btn vk" href="#">Вконтакте</a>
                 </li>
