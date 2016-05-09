@@ -12,11 +12,11 @@
     	<div class="container clearfix">
     		<div class="header-logo">
         		<a href="index.html">
-        			<img src="img/logo.svg" width="139" height="56" alt="Нёрдс, дизайн-студия, Краснодар">	
+        			<img src="img/logo.png" width="139" height="56" alt="Нёрдс, дизайн-студия, Краснодар">	
         		</a>
         	</div>            
             <nav class="main-navigation">
-          		<ul>
+          		<ul class="main-navigation-list">
           			<li>
               			<a href="#">Студия</a>
             		</li>
@@ -24,7 +24,7 @@
               			<a href="#">Клиенты</a>
             		</li>
             		<li>
-             			<a class="active" href="#">Магазин</a>
+             			<a class="active-page">Магазин</a>
             		</li>
             		<li>
               			<a href="#">Контакты</a>
@@ -44,16 +44,19 @@
         <div class="items-content clearfix">
             <aside class="filter">
                 <form action="#" method="post">
-                    <fieldset class="range">
+                    <fieldset class="range"> 
                         <legend>Стоимость:</legend> 
-                        <div class="range-area">
-                            <div class="range-item min"><i></i></div>
-                            <div class="range-item max"><i></i></div>                    
+                        <div class="range-area"> 
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-item min"></div>
+                            <div class="range-item max"></div>                    
                         </div>
-                        <div class="range-text">От:</div>
-                        <input type="number" min="0" max="15000" step="1000" value="0"></input>
-                        <div class="range-text">До:</div>   
-                        <input type="number" min="0" max="15000" step="1000" value="15000"></input>
+                        <div class="price-area">
+                            от<input class="min-price" type="text" value="0"></input>
+                            до<input class="max-price" type="text" value="15000"></input>
+                        </div>
                     </fieldset>
                     <fieldset class="grid">
                         <legend>Сетка:</legend>
@@ -97,7 +100,7 @@
                             </li>
                         </ul>         
                     </fieldset> 
-                    <button class="btn" type="submit" formaction="#">Показать</button>
+                    <button class="submit" type="submit" formaction="#">Показать</button>
                 </form>
             </aside>
             <div class="items-side">
@@ -121,10 +124,10 @@
                     <div class="add-sorting">
                         <ul class="add-sorting-list">
                             <li class="descending">
-                                <a href="#">d</a>
+                                <a href="#"></a>
                             </li>
                             <li class="ascending">
-                                <a href="#">a</a>
+                                <a href="#"></a>
                             </li>
                         </ul>
                     </div>
@@ -133,50 +136,50 @@
                     <article class="item">
                         <img src="img/aviator.jpg" width="240" height="240" alt="AVIATOR - Одностраничный макет с авторским дизайном">
                         <div class="item-hover">
-                            <h2><a href="#"><span class="item-name">AVIATOR </span><span>Одностраничный макет с авторским дизайном</span></a></h2>                
-                            <a class="btn" href="#">8000 р.</a>                     
+                            <a href="#"><span class="item-name">AVIATOR</span><span class="item-description">Одностраничный макет с авторским дизайном</span></a>  
+                            <a class="btn item-btn" href="#">8000 р.</a>                     
                         </div>                
                     </article>
                     <article class="item">
                         <img src="img/sunset.jpg" width="240" height="240" alt="SUNSET - Интернет-магазин с личным кабинетом">
                         <div class="item-hover">
-                            <h2><a href="#"><span class="item-name">SUNSET </span><span>Интернет-магазин с личным кабинетом</span></a></h2>                
-                            <a class="btn" href="#">10000 р.</a>                     
+                            <a href="#"><span class="item-name">SUNSET</span><span class="item-description">Интернет-магазин с личным кабинетом</span></a>
+                            <a class="btn item-btn" href="#">10000 р.</a>                     
                         </div>                
                     </article>
                     <article class="item">
                         <img src="img/forte.jpg" width="240" height="240" alt="FORTE - Отличный макет для личного блога">
                         <div class="item-hover">
-                            <h2><a href="#"><span class="item-name">FORTE </span><span>Отличный макет для личного блога</span></a></h2>                
-                            <a class="btn" href="#">5000 р.</a>                     
+                            <a href="#"><span class="item-name">FORTE</span><span class="item-description">Отличный макет для личного блога</span></a>
+                            <a class="btn item-btn" href="#">5000 р.</a>                     
                         </div>                
                     </article>
                     <article class="item">
                         <img src="img/organic.jpg" width="240" height="240" alt="MODERN ORGANIC THAI - Сайт для ресторана быстрого питания">
                         <div class="item-hover">
-                            <h2><a href="#"><span class="item-name">MODERN ORGANIC THAI </span><span>Сайт для ресторана быстрого питания</span></a></h2>
-                            <a class="btn" href="#">12000 р.</a>                     
+                            <a href="#"><span class="item-name">MODERN ORGANIC THAI</span><span class="item-description two-stripes">Сайт для ресторана быстрого питания</span></a>
+                            <a class="btn item-btn" href="#">12000 р.</a>                     
                         </div>                
                     </article>
                     <article class="item">
                         <img src="img/avenue.jpg" width="240" height="240" alt="AVENUE - Макет для блога о путешествиях">
                         <div class="item-hover">
-                            <h2><a href="#"><span class="item-name">AVENUE </span><span>Макет для блога о путешествиях</span></a></h2>                
-                            <a class="btn" href="#">8000 р.</a>                     
+                            <a href="#"><span class="item-name">AVENUE</span><span class="item-description">Макет для блога о путешествиях</span></a>
+                            <a class="btn item-btn" href="#">8000 р.</a>                     
                         </div>                
                     </article>
                     <article class="item">
-                        <img src="img/dovet.jpg" width="240" height="240" alt="DOVETAIL - Интернет-магазин с галереей товаров">
+                        <img src="img/dovet.jpg" width="240" height="240" alt="DOVETAIL - Интернет-магазин c галереей товаров">
                         <div class="item-hover">
-                            <h2><a href="#"><span class="item-name">DOVETAIL </span><span>Интернет-магазин с галереей товаров</span></a></h2>                
-                            <a class="btn" href="#">14000 р.</a>                     
+                            <a href="#"><span class="item-name">DOVETAIL</span><span class="item-description">Интернет-магазин с галереей товаров</span></a>
+                            <a class="btn item-btn" href="#">14000 р.</a>                     
                         </div>                
                     </article> 
                 </div>        
                 <div class="page-navigation">
                     <ul class="page-navigation-list">
                         <li>
-                            <a href="#">1</a>
+                            <a class="active-item-page">1</a>
                         </li>
                         <li>
                             <a href="#">2</a>
@@ -192,26 +195,32 @@
             </div>
         </div>    
     </main>
-    <div class="map">        
+    <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LxZzm1XPM-jbGm2ZjnIIHn2o2W347k2a&width=1920&height=416&lang=ru_RU&sourceType=constructor&scroll=false"></script>
+        <div class="map-container">
         <div class="contacts">
             <div class="studio-name">NЁrds design studio</div>
-            <div class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+            <div class="adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
             <div class="tel">тел. +7 (812) 275-75-75</div>
-            <a class="contact-btn" href="#">Напишите нам</a>
+            <a class="btn contact-btn" href="#">Напишите нам</a>           
+        </div>
+        </div>
+        <div class="mark">
+            <img src="img/mark.png" width="231" height="190" alt="NЁrds design studio">
         </div>
     </div>  
 
-    <footer class="container clearfix">
+    <footer class="site-footer container clearfix">
         <div class="social">               
             <ul class="social-list">
                 <li>
-                    <a class="social-btn vk" href="#">Вконтакте</a>
+                    <a class="social-btn social-vk" href="#">Вконтакте</a>
                 </li>
                 <li>
-                    <a class="social-btn fb" href="#">Фейсбук</a>
+                    <a class="social-btn social-fb" href="#">Фейсбук</a>
                 </li>
                 <li>
-                    <a class="social-btn inst" href="#">Инстаграм</a>
+                    <a class="social-btn social-inst" href="#">Инстаграм</a>
                 </li>                 
             </ul>
         </div>
@@ -221,4 +230,4 @@
         </div>
     </footer>
 </body>
-</html>    
+</html>
