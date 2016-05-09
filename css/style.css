@@ -58,8 +58,9 @@ h2 {
 }
 
 hr {
-    color: #eeeeee;
-    size: 2px;
+    border-width: 0;
+    height: 2px;
+    background-color: #eeeeee;
 }
 
 .footer-tagline {
@@ -207,7 +208,8 @@ hr {
 }
 
 .slider {
-    position: relative;
+    position: relative;    
+    height: 319px;
     padding-top: 32px;    
 }
 
@@ -231,19 +233,16 @@ hr {
 .slide1 {
     display: block;
     background: transparent url("../img/slide1.png") no-repeat right 19px;
-    min-height: 319px;
 }
 
 .slide2 {
     display: none;
     background: transparent url("../img/slide2.png") no-repeat 640px 23px;
-    min-height: 319px;
 }
 
 .slide3 {
     display: none;
     background: transparent url("../img/slide3.png") no-repeat 540px bottom;
-    min-height: 319px;
 }
 
 .btn {
@@ -275,35 +274,32 @@ hr {
 
 .slide-navigation {
     position: absolute;
+    left: 407px;
+    top: 223px;
+    text-align: center;
+    list-style: none;    
     padding: 0;
-    left: 406px;
-    top: 225px;
-    list-style: none;
 }
 
 .slide-navigation li {
     display: inline-block;
+    vertical-align: top;
     margin-right: 5px;
 }
 
 .slide-navigation-button {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
     background-color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 50%;    
     cursor: pointer;
-    border: none;
     padding: 0;
 }
 
-.active-button::after {
-    display: block;
-    content: "";
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
+.active-button {
     background-color: #c1c1c1;
-    margin-left: 3px;
+    border: 3px solid #ffffff;
 }
 
 .services {
