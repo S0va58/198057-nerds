@@ -1237,6 +1237,26 @@ input:-ms-input-placeholder {
     opacity: 1;
 }
 
+textarea::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+textarea::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+textarea:-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
 .feedback-form label {
     display: block;
     font-size: 16px;
