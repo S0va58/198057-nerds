@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
 }
 
 body {
@@ -238,14 +239,18 @@ hr {
 .slide-title {
     font-size: 36px;
     line-height: 36px;
+    height: 72px;
+    overflow: hidden;
     color: #000000;
     padding-top: 41px;
-    padding-bottom: 17px;
+    margin-bottom: 17px;
 }
 
 .slide-description {
     color: #283136;
-    padding-bottom: 27px;
+    height: 44px;
+    overflow: hidden;
+    margin-bottom: 27px;
 }
 
 .slide-content {
@@ -365,7 +370,19 @@ input[id="btn-3"]:checked ~ .slide3 {
 .service img {
     width: 240px;
     height: 124px;
-    margin-bottom: 17px;
+    margin-bottom: 17px;    
+}
+
+.websites-img {
+    background-color: #fb565a;
+}
+
+.applications-img {
+    background-color: #00ca74;
+}
+
+.presentations-img {
+    background-color: #efc84a;
 }
 
 .services li:last-child {
@@ -594,7 +611,7 @@ input[id="btn-3"]:checked ~ .slide3 {
     width: 231px;
     height: 190px;
     top: 112px;
-    left: 914px;
+    left: 677px;
 }
 
 .social {
@@ -881,10 +898,12 @@ fieldset {
 
 .item-description {
     width: 160px;
+    height: 36px;
     font-size: 14px;
     line-height: 18px;
     color: #283136;
     text-transform: none;
+    overflow: hidden;
     margin: 0 auto;
     margin-bottom: 28px;
 }
@@ -1085,7 +1104,9 @@ legend {
 }
  
 .submit {
-    border: none;
+    border: 0px;
+    border-style: none;
+    outline: none;
     font-size: 12px;
     line-height: 18px;
     color: #000000;
