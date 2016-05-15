@@ -1,23 +1,23 @@
     var open = document.querySelector(".contact-btn");
     var modal = document.querySelector(".modal-feedback");
     var close = document.querySelector(".modal-feedback-close");
-    var name = modal.querySelector("[name=person-name]");
+    var personname = modal.querySelector("[name=person-name]");
     var email = modal.querySelector("[name=person-email]");
     var feedback = modal.querySelector("[name=person-feedback]");
-    var form = modal.querySelector("form");
+    var feedbackform = modal.querySelector("form");
     var storagename = localStorage.getItem("name");
     var storageemail = localStorage.getItem("email");
-   
+       
     open.addEventListener("click", function(event) {
         event.preventDefault();
-        modal.classList.add("modal-feedback-show");        
+        modal.classList.add("modal-feedback-show");
         if (storagename && storageemail) {
-            name.value = storagename;
+            personname.value = storagename;
             email.value = storageemail;
-            feedback.focus();            
+            feedback.focus();
         }
         else {
-            name.focus();
+            personname.focus();
         }
     });
 
@@ -26,12 +26,12 @@
         modal.classList.remove("modal-feedback-show");
     });
 
-    form.addEventListener("submit", function(event) {
-        if (!name.value || !email.value) {
+    feedbackform.addEventListener("submit", function(event) {
+        if (!personname.value || !email.value) {
             event.preventDefault();
         }
         else {
-            localStorage.setItem("name", name.value);
+            localStorage.setItem("name", personname.value);
             localStorage.setItem("email", email.value);
         }
         modal.classList.remove("modal-feedback-show");
@@ -42,5 +42,5 @@
             if (modal.classList.contains("modal-feedback-show")) {
                 modal.classList.remove("modal-feedback-show");
             }
-        }        
+        }
     });

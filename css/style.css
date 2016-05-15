@@ -12,20 +12,47 @@ body {
     color: #283136;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
     font-size: 40px;
     line-height: 1.2em;
     text-transform: uppercase;
     color: #000000;
-    text-align: center;
     margin: 0;
+}
+
+.invisible {
+    font-size: 12px;
+    line-height: 16px;
+    display: none;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
     font-size: 18px;
     line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: none;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+}
+
+p {
     margin: 0;
 }
 
@@ -35,10 +62,6 @@ h2 {
 }
 
 .about-title {
-    font-size: 36px;
-    line-height: 36px;
-    text-transform: none;
-    text-align: left;
     margin-top: 10px;
     margin-bottom: 18px;
 }
@@ -48,7 +71,6 @@ h2 {
 }
 
 .list-title {
-    text-transform: uppercase;
     margin-bottom: 22px;
 }
 
@@ -238,7 +260,6 @@ hr {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    height: 28px;
     background-color: #fb565a;
     border-radius: 3px;
     padding-top: 10px;
@@ -300,21 +321,21 @@ label[for="btn-3"] {
     position: absolute;
     display: none;
     width: 100%;
-    height: 100%;
+    height: 319px;
     top: 0;
     left: 0;
 }
 
 .slide1 {
-    background: transparent url("../img/slide1.png") no-repeat right 19px;
+    background: #eeeeee url("../img/slide1.png") no-repeat right 19px;
 }
 
 .slide2 {
-    background: transparent url("../img/slide2.png") no-repeat 640px 23px;
+    background: #eeeeee url("../img/slide2.png") no-repeat 640px 23px;
 }
 
 .slide3 {
-    background: transparent url("../img/slide3.png") no-repeat 541px top;
+    background: #eeeeee url("../img/slide3.png") no-repeat 541px top;
 }
 
 input[id="btn-1"]:checked ~ .slide1,
@@ -564,13 +585,10 @@ input[id="btn-3"]:checked ~ .slide3 {
 
 .mark {
     position: absolute;
-    top: 30px;
-    left: 1030px;
-}
-
-.mark img {
     width: 231px;
     height: 190px;
+    top: 112px;
+    left: 914px;
 }
 
 .social {
@@ -800,7 +818,6 @@ fieldset {
 .item:hover img {
     position: relative;
     z-index: 1;
-    transition: 0.3s;
 }
 
 .item::before {
@@ -815,7 +832,6 @@ fieldset {
 
 .item:hover::before {
     opacity: 1;
-    transition: 0.3s;
 }
 
 .item::after {
@@ -839,16 +855,16 @@ fieldset {
     left: 20px;
     background-color: #ffffff;
     text-align: center;
-    z-index: 5;
+    z-index: 5; 
 }
 
 .item-name {
-    display: block;
     width: 160px;
     font-size: 18px;
-    color: #000000;
+    line-height: 24px;
     margin: 0 auto;
-    margin-top: 35px;
+    margin-top: 33px;
+    margin-bottom: 12px;
 }
 
 .item-hover a {
@@ -857,19 +873,18 @@ fieldset {
 }
 
 .item-description {
-    display: block;
     width: 160px;
     font-size: 14px;
     line-height: 18px;
+    color: #283136;
     text-transform: none;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 28px;
 }
 
 .two-stripes {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: -7px;
+    margin-bottom: 11px;
 }
 
 .item-hover .item-btn {
@@ -928,6 +943,7 @@ fieldset {
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
     box-shadow: none;
+    pointer-events: none;
     padding: 8px 14px;
 }
 
@@ -1147,7 +1163,7 @@ input[type="checkbox"]:checked + label::before {
     left: 50%;
     background-color: #ffffff;
     color: #000000;
-    box-shadow: 0 15px 45px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px 15px rgba(0, 0, 0, 0.2);
     padding-left: 80px;
     padding-right: 90px;
     padding-top: 55px;
@@ -1156,6 +1172,7 @@ input[type="checkbox"]:checked + label::before {
 
 .modal-feedback-show {
     display: block;
+    animation: bounce 0.8s;
 }
 
 .feedback-form {
@@ -1168,12 +1185,13 @@ input[type="checkbox"]:checked + label::before {
 .feedback-form li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 20px;       
-    margin-bottom: 20px; 
+    line-height: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .feedback-form li:last-child {
-    margin-bottom: 38px;
+    margin-bottom: 48px;
 }
 
 .feedback-form li:not(:first-child) {
@@ -1189,6 +1207,26 @@ input[type="checkbox"]:checked + label::before {
     border: 2px solid #d7dcde;
     border-radius: 2px;
     padding: 8px 13px;    
+}
+
+input::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+input::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+input:-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
 }
 
 .feedback-form label {
@@ -1259,4 +1297,13 @@ input[type="checkbox"]:checked + label::before {
 .submit-modal:active {
     background-color: #b63538;
     box-shadow: inset 0 3px #9b2d30;
+}
+
+@keyframes bounce {
+    0% {
+    transform: translateY(300px);
+}  
+    100% {
+    transform: translateY(0);
+}
 }
