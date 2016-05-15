@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-wrap: break-word;
+    min-width: 900px;
 }
 
 body {
@@ -556,6 +557,7 @@ input[id="btn-3"]:checked ~ .slide3 {
     margin: 0 auto;
     width: 100%;
     background: #eeeeee url("../img/map.jpg") no-repeat 50% 50%;
+    overflow: hidden;
     margin-top: 85px;
     margin-bottom: 77px;
 }
